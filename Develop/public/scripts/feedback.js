@@ -38,9 +38,9 @@ if (feedbackForm) {
           alert(data.status);
           email = '';
           feedback = '';
+        })
+        .catch((error) => {
+          console.error('Error:', error);
         });
     })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
 }
